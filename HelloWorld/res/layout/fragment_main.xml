@@ -1,0 +1,129 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    
+	<!-- User is ment to veiw the program horizontal. 
+	the left side will have player stats the right is for input -->
+	
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        
+        android:layout_weight="2">
+        
+        <!-- this is the left side (used for stats) -->
+        
+        <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" 
+	        android:layout_weight="4">
+	        
+	        <!-- this is in the left side. This will display the text for player stats -->
+	        
+	        <TextView
+	            android:layout_height="wrap_content"
+	            android:text="Player Name" 
+	        	android:layout_weight="4"
+	        	android:layout_width="0dp"/>
+	        
+	        <TextView
+	            android:layout_height="wrap_content"
+	            android:text="Amount of Money" 
+	            android:layout_weight="2"
+	            android:layout_width="0dp"/>
+	        
+	        <TextView
+	            android:layout_height="wrap_content"
+	            android:text="Add to Player" 
+	            android:layout_weight="1"
+	            android:layout_width="0dp"/>
+	        
+	        <TextView
+	            android:layout_height="wrap_content"
+	            android:text="Remove City" 
+	            android:layout_weight="1"
+	            android:layout_width="0dp"/>
+	        
+	        <TextView
+	            android:layout_height="wrap_content"
+	            android:text="Number of cities" 
+	            android:layout_weight="1"
+	            android:layout_width="0dp"/>
+	        
+	        <TextView
+	            android:layout_height="wrap_content"
+	            android:text="Add a city" 
+	            android:layout_weight="1"
+	            android:layout_width="0dp"/>
+		</LinearLayout>
+		
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_weight="1">
+	    <!-- this is in the left side. This will display for player 1 -->
+	    
+	    <EditText
+	            android:id="@+id/player1"
+	            android:layout_height="wrap_content"
+	            android:hint="@string/player1" 
+	        	android:layout_weight="4"
+	        	android:layout_width="0dp"/>
+	    
+	    <TextView
+	            android:layout_height="wrap_content"
+	            android:text="$124" 
+	        	android:layout_weight="1"
+	        	android:layout_width="0dp"/>
+	    
+	    <Button 
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dp"
+	        android:text="+"
+	        android:layout_weight="1"
+	        />
+	    
+	    <Button 
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dp"
+	        android:text="-"
+	        android:layout_weight="1"/>
+	    
+	    <TextView
+	            android:layout_height="wrap_content"
+	            android:text="1" 
+	        	android:layout_weight="1"
+	        	android:layout_width="0dp"/>
+	    
+	    <Button 
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dp"
+	        android:text="+"
+	        android:layout_weight="1"/>
+	    
+	    </LinearLayout>
+        
+    </LinearLayout>
+    
+	<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_weight="1">
+        
+        <TextView
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:text="Calcs" />
+        
+    </LinearLayout>
+    
+    
+</LinearLayout>
